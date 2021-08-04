@@ -6,7 +6,7 @@
                 <h2>Products</h2>
             </div>
             <div class="pull-right">
-                @can('product-create')
+                @can('create_products')
                     <a class="btn btn-success" href="{{ route('products.create') }}"> Create New Product</a>
                 @endcan
             </div>
@@ -32,12 +32,12 @@
                 <td>
                     <form action="{{ route('products.destroy',$product->id) }}" method="POST">
                         <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Show</a>
-                        @can('product-edit')
+                        @can('update_products')
                             <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Edit</a>
                         @endcan
                         @csrf
                         @method('DELETE')
-                        @can('product-delete')
+                        @can('delete_products')
                             <button type="submit" class="btn btn-danger">Delete</button>
                         @endcan
                     </form>
