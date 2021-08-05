@@ -10,7 +10,19 @@ Authentication and Authorization service based on Laravel framework.
 - Laravel framework: Framework based on PHP.
 - Database: MySQL.
 
-## Installations
+## Packages used
 
 - [Spatie](https://spatie.be/docs/laravel-permission/v4/installation-laravel) package.
 - [Laravel\ui](https://laravel.com/docs/7.x/authentication) package.
+
+## Installation
+
+After pull the project
+
+- create data base with name: fatura
+- In terminal: php artisan migrate:fresh --seed
+
+## Login credentials
+
+- email: admin@fatura.app
+- pw: 12345678
